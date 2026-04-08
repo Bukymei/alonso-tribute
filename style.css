@@ -161,3 +161,26 @@ footer {
   padding: 6px 0;
   break-inside: avoid;
 }
+
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  background: #0a0a0a;
+}
+
+/* Yellow side padding areas */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  background: #e6b800;        /* darker, richer gold */
+  z-index: -1;
+}
+
+body::before { left: 0; }
+body::after  { right: 0; }
