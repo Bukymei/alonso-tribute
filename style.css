@@ -86,6 +86,25 @@ footer {
   position: relative;
   display: inline-block;
   max-width: 580px;
+  margin: 0 auto;
+}
+
+.photo-container img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.photo-container:hover img {
+  transform: scale(1.03);
+}
+
+/* Photo Hover Stats - Fixed for GitHub Pages */
+.photo-container {
+  position: relative;
+  display: inline-block;
+  max-width: 580px;
+  margin: 0 auto;
 }
 
 .photo-container img {
@@ -105,17 +124,17 @@ footer {
   transform: translate(-50%, -50%);
   background: rgba(10, 10, 10, 0.96);
   color: #ffcc00;
-  padding: 16px 22px;
+  padding: 14px 18px;
   border-radius: 12px;
-  width: 82%;
-  max-width: 320px;
+  width: 88%;
+  max-width: 380px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
   box-shadow: 0 8px 25px rgba(255, 204, 0, 0.45);
   text-align: left;
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: 0.98rem;
+  line-height: 1.4;
 }
 
 .photo-container:hover .stats-overlay {
@@ -125,7 +144,7 @@ footer {
 
 .stats-overlay h3 {
   margin: 0 0 12px 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #ffcc00;
 }
@@ -139,6 +158,6 @@ footer {
 }
 
 .stats-overlay li {
-  padding: 7px 0;
+  padding: 6px 0;
   break-inside: avoid;
 }
