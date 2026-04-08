@@ -177,7 +177,7 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 28px;
+  width: 20px;
   background: #e6b800;        /* darker, richer gold */
   z-index: -1;
 }
